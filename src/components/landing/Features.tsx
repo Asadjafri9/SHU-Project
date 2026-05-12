@@ -43,7 +43,6 @@ export function Features() {
             kicker="02"
             title="New joiner welcome"
             body="The brief automatically introduces anyone running their first standup."
-            accent
           />
           <FeatureCard
             kicker="03"
@@ -73,12 +72,12 @@ function FeatureCard({
   return (
     <article
       className={`box box-shadow-hard p-6 ${wide ? "md:col-span-2" : ""} ${
-        accent ? "bg-[var(--persian)] text-[var(--ghost)]" : ""
+        accent ? "bg-[var(--persian)] text-white" : ""
       }`}
     >
-      <div className={`font-mono text-xs ${accent ? "text-[var(--ghost)]/70" : "text-[var(--ink-soft)]"}`}>{kicker}</div>
-      <h3 className={`font-display text-2xl mt-3 ${accent ? "text-[var(--ghost)]" : "text-[var(--ink)]"}`}>{title}</h3>
-      <p className={`mt-2 text-sm ${accent ? "text-[var(--ghost)]/80" : "text-[var(--ink-soft)]"}`}>{body}</p>
+      <div className={`font-mono text-xs ${accent ? "text-white/70" : "text-[var(--ink-soft)]"}`}>{kicker}</div>
+      <h3 className={`font-display text-2xl mt-3 ${accent ? "text-white" : "text-[var(--ink)]"}`}>{title}</h3>
+      <p className={`mt-2 text-sm ${accent ? "text-white/90" : "text-[var(--ink-soft)]"}`}>{body}</p>
     </article>
   );
 }

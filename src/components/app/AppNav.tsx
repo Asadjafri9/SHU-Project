@@ -20,8 +20,8 @@ export function AppNav() {
     <>
       <header className="sticky top-0 z-50 border-b border-[var(--line-strong)] bg-[color-mix(in_oklab,var(--ghost)_85%,transparent)] backdrop-blur">
         <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-          <Link to="/dashboard" className="flex items-center gap-2 font-display text-lg tracking-tight">
-            <span className="inline-block w-2.5 h-2.5 bg-[var(--persian)] rotate-45" />
+          <Link to="/dashboard" className="flex items-center gap-3 font-display text-lg tracking-tight">
+            <img src="/logo.png" alt="StandupBot" className="w-8 h-8 object-contain" />
             <span className="font-bold">StandupBot</span>
           </Link>
 
@@ -73,7 +73,7 @@ export function AppNav() {
 
             {/* Modal content */}
             <div className="text-center mb-8">
-              <div className="inline-block w-4 h-4 bg-[var(--persian)] rotate-45 mb-4" />
+              <img src="/logo.png" alt="StandupBot" className="w-16 h-16 mx-auto mb-4 object-contain" />
               <h2 className="font-display text-2xl font-bold text-[var(--ink)]">Log out?</h2>
               <p className="text-sm text-[var(--ink-soft)] mt-2">
                 Are you sure you want to log out of StandupBot?
